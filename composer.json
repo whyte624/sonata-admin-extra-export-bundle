@@ -1,0 +1,30 @@
+{
+  "name" : "Whyte624/SonataAdminExtraExportBundle",
+  "description" : "Sonata Admin extra export formats",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Andrei Sozonov",
+    "email" : "whyte624@gmail.com"
+  }],
+  "keywords" : [
+    "sonata admin"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Whyte624\\SonataAdminExtraExportBundle" : ""
+    }
+  },
+  "target-dir" : "Whyte624/SonataAdminExtraExportBundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0-dev"
+    }
+  }
+}
