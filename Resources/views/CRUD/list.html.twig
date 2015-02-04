@@ -1,0 +1,29 @@
+{% extends 'Whyte624SonataAdminExtraExportBundle::html_layout.html.twig' %}
+
+{% block content %}
+    <h1>
+        {% for menu in admin.breadcrumbs('list') %}
+            {% if loop.last  %}{{ menu.label }}{% endif %}
+        {% endfor %}
+    </h1>
+    <table class="table table-bordered table-striped">
+        {% for row in admin.dataSourceIterator %}
+            {% if loop.first %}
+                <thead>
+                <tr>
+                    {% for header, value in row %}
+                        <th>{{ header }}</th>
+                    {% endfor %}
+                </tr>
+                </thead>
+            {% endif %}
+            {% if loop.first %}<tbody>{% endif %}
+            <tr>
+                {% for value in row %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        {% if admin.dataSourceIterator|length > 0 %}</tbody>{% endif %}
+    </table>
+{% endblock content %}

@@ -1,18 +1,19 @@
 {
   "name" : "whyte624/sonata-admin-extra-export-bundle",
-  "description" : "Sonata Admin extra export formats",
+  "description" : "Sonata Admin extra export formats (pdf, jpg)",
   "type" : "symfony-bundle",
+  "homepage": "https://github.com/whyte624/sonata-admin-extra-export-bundle",
   "authors" : [{
     "name" : "Andrei Sozonov",
-    "email" : "whyte624@gmail.com"
+    "email" : "whyte624@gmail.com",
+    "homepage": "http://whyte624.ru"
   }],
-  "keywords" : [
-    "sonata admin"
-  ],
+  "keywords" : ["snappy", "pdf", "knplabs", "knp", "bundle", "jpg", "sonata", "admin", "sonataadmin", "sonata admin", "export"],
   "license" : [
     "MIT"
   ],
   "require" : {
+    "php": ">=5.4.0",
     "sonata-project/admin-bundle": "~2.4",
     "knplabs/knp-snappy-bundle": "dev-master"
   },

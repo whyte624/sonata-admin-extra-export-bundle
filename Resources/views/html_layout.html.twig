@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    {% block stylesheets %}
+        {% if admin_pool is defined %}
+            {% for stylesheet in admin_pool.getOption('stylesheets', []) %}
+                <link rel="stylesheet" href="{{ app.request.schemeAndHttpHost }}{{ asset(stylesheet) }}">
+            {% endfor %}
+        {% endif %}
+    {% endblock %}
+    <style>
+        html, body {
+            background: none !important;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}{% endblock content %}
+</body>
+</html>
