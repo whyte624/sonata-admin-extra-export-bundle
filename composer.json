@@ -1,5 +1,5 @@
 {
-  "name" : "Whyte624/SonataAdminExtraExportBundle",
+  "name" : "whyte624/sonata-admin-extra-export-bundle",
   "description" : "Sonata Admin extra export formats",
   "type" : "symfony-bundle",
   "authors" : [{
