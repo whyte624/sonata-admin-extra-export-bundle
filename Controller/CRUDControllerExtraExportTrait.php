@@ -16,7 +16,7 @@ trait CRUDControllerExtraExportTrait
     {
         /* @var CRUDController $this */
         try {
-            parent::exportAction($request);
+            return parent::exportAction($request);
         } catch (\RuntimeException $e) {
             $format = $request->get('format');
 
