@@ -12,7 +12,7 @@ trait CRUDControllerExtraExportTrait
      * @param Request $request
      * @return Response
      */
-    public function exportAction(Request $request)
+    public function exportAction(Request $request = null)
     {
         /* @var CRUDController $this */
         try {
