@@ -17,7 +17,6 @@ With [composer](http://packagist.org), add:
 ```json
 {
     "require": {
-        "knplabs/knp-snappy-bundle": "dev-master",
         "whyte624/sonata-admin-extra-export-bundle": "dev-master"
     }
 }
